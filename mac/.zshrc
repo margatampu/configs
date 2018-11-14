@@ -129,12 +129,6 @@ alias push='git push origin'
 alias status='git status'
 alias wip='git add --all && git commit -m "wip"'
 
-# NPM aliases
-alias dev='npm run dev'
-alias hot='npm run hot'
-alias prod='npm run prod'
-alias watch='npm run watch'
-
 #PHP Unit aliases
 alias pu='./vendor/bin/phpunit'
 alias puf='./vendor/bin/phpunit --filter'
