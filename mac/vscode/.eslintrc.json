@@ -1,0 +1,33 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es6": true,
+        "node": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:vue/essential",
+        "plugin:prettier/recommended"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "sourceType": "module",
+        "parser": "babel-eslint"
+    },
+    "rules": {
+        "no-const-assign": "warn",
+        "no-this-before-super": "warn",
+        "no-undef": "warn",
+        "no-unreachable": "warn",
+        "no-unused-vars": "warn",
+        "valid-typeof": "warn",
+        "eqeqeq": "warn",
+        "no-console": ["error", { "allow": ["warn", "error"] }],
+        "error": "off",
+        "vue/html-self-closing": "off",
+        "vue/require-v-for-key": "off"
+    }
+}

@@ -1,0 +1,32 @@
+{
+  "workbench.statusBar.visible": false,
+  "explorer.openEditors.visible": 0,
+  "workbench.activityBar.visible": true,
+  "editor.minimap.enabled": false,
+  "editor.fontSize": 16,
+  "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
+  "php-cs-fixer.lastDownload": 1545022103572,
+  "explorer.confirmDelete": false,
+  "breadcrumbs.enabled": true,
+  "window.openFilesInNewWindow": "on",
+  "window.restoreWindows": "none",
+  "window.openFoldersInNewWindow": "on",
+  "importCost.typescriptExtensions": ["\\.vue$"],
+  "vetur.validation.template": false,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "vue",
+    "vue-html",
+    "html"
+  ],
+  "eslint.autoFixOnSave": true,
+  "editor.formatOnSave": true,
+  "vetur.completion.useScaffoldSnippets": false,
+  "php-cs-fixer.onsave": true,
+  "php-cs-fixer.config": "/Users/sabartampubolon/.vscode/.php_cs;/Users/sabartampubolon/.vscode/.php_cs.dist",
+  "terminal.integrated.fontSize": 14,
+  "window.zoomLevel": 0,
+  "diffEditor.renderSideBySide": true,
+  "workbench.colorTheme": "Slime"
+}
