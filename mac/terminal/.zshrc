@@ -3,10 +3,8 @@
 
 export PATH=~/.composer/vendor/bin:$PATH
 export PATH="/usr/local/sbin:$PATH"
-
-#export PATH="/usr/local/opt/php@7.1/bin:$PATH"
-#export PATH="/usr/local/opt/php@7.1/sbin:$PATH"
-#export PATH="/usr/local/bin:$PATH"
+export PATH="/usr/local/opt/php@7.3/bin:$PATH"
+export PATH="/usr/local/opt/php@7.3/sbin:$PATH"
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/sabartampubolon/.oh-my-zsh"
@@ -14,7 +12,7 @@ export ZSH="/Users/sabartampubolon/.oh-my-zsh"
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
-# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
+# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="robbyrussell"
 
 # Set list of themes to pick from when loading at random
@@ -33,8 +31,14 @@ ZSH_THEME="robbyrussell"
 # Uncomment the following line to disable bi-weekly auto-update checks.
 # DISABLE_AUTO_UPDATE="true"
 
+# Uncomment the following line to automatically update without prompting.
+# DISABLE_UPDATE_PROMPT="true"
+
 # Uncomment the following line to change how often to auto-update (in days).
 # export UPDATE_ZSH_DAYS=13
+
+# Uncomment the following line if pasting URLs and other text is messed up.
+# DISABLE_MAGIC_FUNCTIONS=true
 
 # Uncomment the following line to disable colors in ls.
 # DISABLE_LS_COLORS="true"
@@ -69,14 +73,11 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(
-    git
-)
+# plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -91,9 +92,6 @@ source $ZSH/oh-my-zsh.sh
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
-
-# ssh
-# export SSH_KEY_PATH="~/.ssh/rsa_id"
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
@@ -112,29 +110,29 @@ source $ZSH/oh-my-zsh.sh
 #############################
 
 # Artisan aliases
-alias key='php artisan key:generate'
 alias pa='php artisan'
 alias pam='php artisan migrate'
+alias pams='php artisan migrate --seed'
 alias pamf='php artisan migrate:fresh'
-alias queue='php artisan queue:work --tries=1'
-alias seed='php artisan db:seed'
-
-# Artisan make aliases
-alias controller='php artisan make:controller --resource'
-alias migration='php artisan make:migration'
-alias model='php artisan make:model'
+alias pakeygen='php artisan key:generate'
+alias paq='php artisan queue:work'
+alias paseed='php artisan db:seed'
+alias pamake='php artisan make:'
+alias paclear='php artisan config:clear && php artisan cache:clear && php artisan view:clear'
 
 # Composer aliases
 alias cda='composer dump-autoload'
 
 # Git aliases
-alias branch='git branch'
-alias commit='git add --all && git commit -m'
-alias nah='git reset --hard && git clean -df'
-alias pull='git pull origin'
-alias push='git push origin'
-alias status='git status'
-alias wip='git add --all && git commit -m "wip"'
+alias glog='git log'
+alias gstatus='git status'
+alias gbranch='git branch'
+alias gpull='git pull origin'
+alias gpush='git push origin'
+alias gnah='git reset --hard && git clean -df'
+alias gcommit='git add --all && git commit -m'
+alias gwip='git add --all && git commit -m "wip"'
+alias gmerge='f(){git fetch origin $1 && git merge $1};f'
 
 #PHP Unit aliases
 alias pu='./vendor/bin/phpunit'
