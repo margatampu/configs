@@ -122,6 +122,9 @@ alias paclear='php artisan config:clear && php artisan cache:clear && php artisa
 
 # Composer aliases
 alias cda='composer dump-autoload'
+alias ci='composer install'
+alias cr='composer remove'
+alias cu='composer update'
 
 # Git aliases
 alias glog='git log'
