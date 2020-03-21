@@ -1,0 +1,12 @@
+# Source: https://www.freecodecamp.org/news/manage-multiple-github-accounts-the-ssh-way-2dadc30ccaca/
+# Work account, - the default config
+Host github.com-dyned
+   HostName github.com
+   User git
+   IdentityFile ~/.ssh/id_rsa_dyned_com
+   
+# Personal account
+Host github.com-gmail
+   HostName github.com
+   User git
+   IdentityFile ~/.ssh/id_rsa_gmail_com
