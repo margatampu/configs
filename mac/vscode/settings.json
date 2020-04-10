@@ -15,7 +15,7 @@
     "[php]": {
         "editor.defaultFormatter": "junstyle.php-cs-fixer"
     },
-    "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
+    "php-cs-fixer.executablePath": "/usr/local/bin/php-cs-fixer",
     "php-cs-fixer.lastDownload": 1585724065206,
     "php-cs-fixer.onsave": true,
     "php-cs-fixer.config": "/Users/sabartampubolon/Settings/vscode/.php_cs;/Users/sabartampubolon/Settings/vscode/.php_cs.dist;.php_cs;.php_cs.dist",
@@ -35,5 +35,6 @@
     ],
     "vetur.validation.template": false,
     "diffEditor.ignoreTrimWhitespace": false,
-    "window.openFoldersInNewWindow": "on"
+    "window.openFoldersInNewWindow": "on",
+    "window.zoomLevel": 0
 }
