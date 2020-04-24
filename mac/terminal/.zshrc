@@ -136,7 +136,7 @@ alias gpush='git push origin'
 alias gnah='git reset --hard && git clean -df'
 alias gcommit='git add --all && git commit -m'
 alias gwip='git add --all && git commit -m "wip"'
-alias gmerge='fgmerge(){git fetch origin $1 && git merge $1};fgmerge'
+alias gmerge='fgmerge(){git fetch origin && git merge origin $1};fgmerge'
 
 # PHP Unit aliases
 alias pu='./vendor/bin/phpunit'
@@ -150,3 +150,6 @@ alias gasdyned='git config user.name "stampubolon" && git config user.email "sta
 alias gasgmail='git config user.name "margatampu" && git config user.email "sabartampubolon@gmail.com"'
 alias gcdyned='fgcdyned(){dyned && mkdir $2 && cd $2 && git clone git@github.com-dyned:DynEd/$1.git . && gasdyned};fgcdyned'
 alias gcgmail='fgcgmail(){gmail && mkdir $2 && cd $2 && git clone git@github.com-gmail:margatampu/$1.git . && gasgmail};fgcgmail'
+
+# SSH Development
+alias godev='ssh -i ~/Settings/DynEd/Developer.pem ubuntu@13.251.3.234'
